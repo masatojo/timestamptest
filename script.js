@@ -5,6 +5,6 @@ function getJSON() {
       alert(req.responseText);		          // 取得した JSON ファイルの中身を表示
     }
   };
-  req.open("GET", "http://xxx.yyy.com/sample.json", false); // HTTPメソッドとアクセスするサーバーの　URL　を指定
+  req.open("GET", "https://ntp-a1.nict.go.jp/cgi-bin/json", false); // HTTPメソッドとアクセスするサーバーの　URL　を指定
   req.send(null);					    // 実際にサーバーへリクエストを送信
 }
