@@ -6,26 +6,17 @@
 
 </head>
   <body> 
-    <h1>time</h1>
- <script type="text/javascript">   
-window.onload = function() {
-    var url = "https://worldtimeapi.org/api/timezone/Asia/Tokyo";
-    let r = new XMLHttpRequest();
-    r.open('GET', url);
-    r.responseType = 'json';
-    r.send();
 
-    r.onreadystatechange = () => {
-        if (r.readyState == 4 && r.status == 200) {
-            const jsonStr = JSON.stringify(r.response);
-            const obj = JSON.parse(jsonStr);
-            var time = document.getElementById("time");
-            time.innerHTML = obj["datetime"];
-        }
-    }
-}
-     </script>
+            <div class="content">
+
+                <h1>time</h1>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                <script type="text/javascript" src="js/time.js"></script>
+
                 <h4 id = "time" class="heading_quiz">test</h4>
-    <input type="button"value="JSONファイルを取得する" onclick="getJSON()">
+
+            </div>
+            
+    <input type="button"value="JSONファイルを取得する" >
     </body>
 </html>
