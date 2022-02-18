@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
   <title>timestamp</title>
+
  <script type="text/javascript">   
 function getJSON() {
   var req = new XMLHttpRequest();		  // XMLHttpRequest オブジェクトを生成する
@@ -11,14 +12,17 @@ function getJSON() {
       alert(req.responseText);		          // 取得した JSON ファイルの中身を表示
     }
   };
-  req.open("GET", "http://ntp-a1.nict.go.jp/cgi-bin/jsont", false); // HTTPメソッドとアクセスするサーバーの　URL　を指定
+  req.open("GET", "http://worldtimeapi.org/api/timezone/Asia/Tokyo", false); // HTTPメソッドとアクセスするサーバーの　URL　を指定
   req.send(null);					    // 実際にサーバーへリクエストを送信
 }
+
+
+
+
      </script>
 </head>
   <body>
     <h1>timestamp</h1>
     <p>this is not server error</p>
-    <input type="button"value="JSONファイルを取得する" onclick="getJSON()">
     </body>
 </html>
