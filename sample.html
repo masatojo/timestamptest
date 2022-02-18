@@ -12,7 +12,7 @@ function getJSON() {
       alert(req.responseText);		          // 取得した JSON ファイルの中身を表示
     }
   };
-  req.open("GET", "http://worldtimeapi.org/api/timezone/Asia/Tokyo", false); // HTTPメソッドとアクセスするサーバーの　URL　を指定
+  req.open("GET", "https://worldtimeapi.org/api/timezone/Asia/Tokyo", false); // HTTPメソッドとアクセスするサーバーの　URL　を指定
   req.send(null);					    // 実際にサーバーへリクエストを送信
 }
 
